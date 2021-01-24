@@ -1,7 +1,7 @@
 #тестим воис
 import os
 import time
-import speech_recognation as sr
+import speech_recognition as sr
 import fuzzywuzzy as fuzz
 import pyttsx3
 import datetime
