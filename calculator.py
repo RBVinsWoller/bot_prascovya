@@ -61,14 +61,14 @@ buttons = (('7', '8', '9', '/', '4'),
 activeStr = ''
 stack = []
     
-label = Label(root, text='', width=50)
+label = Label(root, text='', width=50, background="#292828", foreground="#ccc", justify = LEFT)
 label.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
-button = Button(root, text='CE', command=lambda text='CE': click(text))
+button = Button(root, text='CE', height = 2, background="#363636", foreground="#ccc", command=lambda text='CE': click(text))
 button.grid(row=0, column=3, sticky="nsew")
 for row in range(4):
     for col in range(4):
-        button = Button(root, text=buttons[row][col],
+        button = Button(root, background="#212121", foreground="#ccc", text=buttons[row][col],
                         command=lambda row=row, col=col: click(buttons[row][col]))
         button.grid(row=row + 2, column=col, sticky="nsew")
             
