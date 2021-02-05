@@ -1,6 +1,8 @@
 from tkinter import *  
 from tkinter import messagebox
 from math import hypot
+from PIL import ImageTk, Image
+import os
   
 def circle_area():
     name = radius_vvod.get()
@@ -29,11 +31,11 @@ name = 0
 
 window = Tk()  
 window.title('Geometrcic matching:')  
-window.geometry('300x250')
+window.geometry('235x190')
 
 ############################################################
 
-radius_title = Label(window, text="        1) Circle's area from Radius")  
+radius_title = Label(window, text="1) Circle's area")  
 radius_title.grid(column=0, row=0)
 
 radius = Label(window, text="Radius:", padx = 0)  
@@ -47,7 +49,7 @@ radius_count.grid(column=2, row=1)
 
 ############################################################
 
-length_title = Label(window, text="2) Length from Radius")  
+length_title = Label(window, text="    2) Circle's length")  
 length_title.grid(column=0, row=3, padx = 0)
 
 length = Label(window, text="Radius:")  
@@ -61,16 +63,16 @@ length_count.grid(column=2, row=4)
 
 ############################################################
 
-vector_title = Label(window, text="3) Vector's length")  
+vector_title = Label(window, text=" 3) Hypotenuse")  
 vector_title.grid(column=0, row=5, padx = 0)
 
-vectorx = Label(window, text="Vector (X):")  
+vectorx = Label(window, text="Leg 1:")  
 vectorx.grid(column=0, row=6)
 
 vectorx_vvod = Entry(window,width=10)  
 vectorx_vvod.grid(column=1, row=6)
 
-vectory = Label(window, text="Vector (Y):")  
+vectory = Label(window, text="Leg 2:")  
 vectory.grid(column=0, row=8)
 
 vectory_vvod = Entry(window,width=10)  

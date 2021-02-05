@@ -7,6 +7,8 @@ def match():
    call(['python', 'formulas.py'])
 def rooty():
    call(['python', 'roots.py'])   
+def trigonometry():
+   call(['python', 'trigonometry.py'])   
 
 root = Tk()
 root.title('Помощник по математике')
@@ -24,6 +26,10 @@ matchmaking.pack()
 rootsy = Button(text="     Корни     ", background="#292828", foreground="#ccc",
              padx="20", pady="8", font="Arial 16", command=rooty)
 rootsy.pack()
+
+trigonometry = Button(text="Приведение", background="#292828", foreground="#ccc",
+             padx="20", pady="8", font="Arial 16", command=trigonometry)
+trigonometry.pack()
 
 
 root.mainloop()
